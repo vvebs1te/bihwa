@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./image/icon.png" rel="icon" type="image/png" sizes="32x32" >
+    <link rel="stylesheet" href="./css/icon.css"><!--탑 버튼 수정o-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>비화</title>
+</head>
+<body>
+    <div id="header"><!--헤더-->
+        <div class="header">
+            <a href="./index.html" class="logo"><img src="./image/logo.png" alt="로고"></a>
+            <ul class="nav">
+                <li><a href="./no1.html">공지사항</a></li>
+                <li><a href="./no2.html">세계관</a></li>
+                <li><a href="./no3.html" class="on">시스템</a></li>
+                <li><a href="#none">캐릭터</a></li>
+            </ul>
+        </div>
+    </div><!--헤더-->
+
+    <div class="m_nav"><!--모바일 내비-->
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="sidebar">
+            <ul>
+                <li><a href="./no1.html">공지사항</a></li>
+                <li><a href="./no2.html">세계관</a></li>
+                <li><a href="./no3.html" class="on">시스템</a></li>
+                <li><a href="#none">캐릭터</a></li>
+            </ul>
+        </div>
+    </div><!--모바일 내비-->
+
+    <div id="body"><!--본문-->
+        <div class="body">
+            <h1>비화 : 일상 시스템</h1>
+            <ul>
+                <li class="bold">수색</li>
+                <li>본 커뮤니티에서는 매일 최소 2인, 최대 4인으로 팀을 구성한 후 수색이 진행됩니다.</li>
+                <li>매일 20시부터 24시까지 DM으로 진행되며, 수색과 전투 속도에 따라 유동적일 수 있습니다.</li>
+                <li>수색을 매일 나갈 필요는 없으나 스토리 진행 흐름 파악에는 참여해주시길 바랍니다.</li>
+                <li>선택한 구역을 조사하며 정보를 얻어내거나, 부상을 입을 가능성이 있으며 도중에 조우한 좀비 및 크리처와 전투가 발생할 수 있습니다.</li>
+            </ul>
+            <ul>
+                <li class="bold">공복 및 상태 이상</li>
+                <li>수색 및 조사로 인해 캐릭터들에게 상태이상이 생길 수 있습니다. 이는 일종의 패널티로 작용하며 전투 및 조사시 스탯에 영향을 주거나 체력을 감소시킬 수 있습니다.</li>
+                <li>모든 상태이상이 발현됨의 기준 시간은 현실 시간으로 자정(0시)입니다.</li>
+                <li><b>&lt;공복&gt;</b></li>
+                <li>사람이기에 당연히 해야할 섭취가 이루어지지 않을 시 생기는 상태이상입니다. 쉘터 내에서는 식량 걱정을 할 필요가 없으나, 쉘터 밖에서 잔류를 하게 되는 경우 식사 유무가 중요해집니다.</li>
+                <li>1단계: 제때 식사를 하지 못한 상태. 마지막 식사 후 24시간이 지난 시점, 즉 잔류 즉시 발생하는 시점입니다. 모든 스탯이 1씩 감소합니다. 체력의 변화는 없습니다.</li>
+                <li>2단계: 허기짐을 참을 수 있는 상태. 1단계 진입 후 추가적인 음식 섭취없이 12시간이 지난 시점입니다. 모든 스탯이 1씩 추가적으로 감소합니다. 체력이 30 감소합니다.</li>
+                <li>3단계: 행동에 제한이 생기는 상태. 2단계 진입 후 추가적인 음식 섭취없이 24시간이 지난 시점입니다. 조사 및 전투에 참여할 수 없게되며 체력이 추가적으로 50 감소합니다.</li>
+                <li>4단계: 3단계 진입 후 추가적인 음식 섭취없이 24시간이 지난 시점으로, 사망에 이릅니다.</li>
+                <li>음식물 섭취 시 스탯을 포함해 공복 상태가 1단계로 돌아가게 되며, 간식류를 섭취할 시 바로 전 단계로 돌아가게 됩니다.</li>
+                <li><b>&lt;동상&gt;</b></li>
+                <li>추운 겨울 오랜 외출시에 피할 수 없으며 쉘터에서는 신경을 쓸 필요가 없으나, 잔류시 적절한 아이템을 사용하지 못할시 상태이상을 피할 수 없어집니다.</li>
+                <li>상태이상에 걸리게 되면 모든 스탯이 일시적으로 2 감소함과 동시에 체력이 12시간당 10씩 감소하게 되며 쉘터나 베이스 캠프로 합류시 해제됩니다.</li>
+                <li><b>&lt;기절/빈사&gt;</b></li>
+                <li>체력이 한번에 50이상 감소할 시 기절을 하며 일시적으로 행동불능 상태가 되며 6시간이 지나면 해제됩니다.</li>
+                <li>기절 상태이상이 3번 이상 또는 24시간 내 체력이 현재 체력의  80%이상 감소 시 빈사상태가 되며 적절한 조치가 이뤄지지 않을시 24시간내에 사망하게 됩니다.</li>
+            </ul>
+            <ul>
+                <li class="bold">무전</li>
+                <li>쉘터 내에는 5개의 무전기가 있습니다.</li>
+                <li>타임라인: 대장이 가지고 있는 1개의 무전기.<br>
+                    외부: 외부 수색 시 가지고 나갈 수 있는 4개의 무전기.</li>
+                <li>무전은 수색 후 타임라인에 복귀하지 못하고 잔류하게 되거나 기타 정보 공유 등으로 사용이 가능합니다.</li>
+                <li>외부로 가지고 나갈 수 있는 무전기의 갯수는 한정되어 있어 조사시간 전 무전기를 사용할 팀을 자율적으로 정해주세요.</li>
+                <li>단체 무전은 모든 무전기(타임라인+무전 소지중인 외부팀)에 송신할 수 있고, 개인 무전은 하나의 무전기에만 송신할 수 있습니다. 한 번의 무전을 듣거나 보낼 때 배터리의 5%를 소모하게 됩니다.</li>
+                <li>배터리 충전은 쉘터 내에서만 가능하며, 24시간 충전시 50%, 48시간 충전시 100%가 충전됩니다.</li>
+            </ul>
+        </div>
+    </div><!--본문-->
+
+	<a href="#" class="top"><img src="./image/top.png" alt="top버튼"></a><!--탑 버튼-->
+    <!--js-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script><!--제이쿼리 라이브러리-->
+    <!--js-->
+	<script src="script/icon.js"></script><!--탑 버튼 수정o-->
+</body>
+</html>
