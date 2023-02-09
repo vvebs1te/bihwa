@@ -317,7 +317,8 @@ h3{
         margin-bottom: 5%;
     }
     .chara_inner{
-        width: 100%;
+        width: 90%;
+        padding: 0 5%;
     }
 }
 
