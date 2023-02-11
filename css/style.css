@@ -525,6 +525,9 @@ h3{
     .chara_inner img{
         width: 300px;
     }
+    #mini{
+        width: 150px;
+    }
 }
 
 /*500*/
