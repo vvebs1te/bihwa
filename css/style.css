@@ -386,6 +386,9 @@ h3{
     .nav{
         display: none;
     }
+    .top img{
+        display: none;
+    }
     /*모바일 내비 보이게 만들기!!*/
     .m_nav{
         display: block;
